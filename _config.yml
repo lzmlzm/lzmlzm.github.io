@@ -1,8 +1,8 @@
 # Site settings
-title: BY Blog
+title: LZM Blog
 SEOTitle: 麻瓜不懂Magic的博客 | BY Blog
 header-img: img/post-bg-desk.jpg
-email:1198492751@qq.com
+#email:1198492751@qq.com
 description: "Every failure is leading towards success."
 keyword: "Muggle, LZM,Robot, 麻瓜不懂Magic的博客, STM32, 机器视觉，机器人"
 url: "http://lzmlzm.github.io"          # your host, for absolute URL
