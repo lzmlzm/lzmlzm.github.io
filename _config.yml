@@ -21,9 +21,7 @@ RSS: false
 weibo_username:     麻瓜不懂Magic
 zhihu_username:     不二粥
 github_username:    lzmlzm
-#facebook_username:  baiying.qiu.7
-#jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+
 
 
 
@@ -94,7 +92,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "baidu",
+        title: "Baidu",
         href: "http://www.baidu.com"
     },{
         title: "简书·BY",
