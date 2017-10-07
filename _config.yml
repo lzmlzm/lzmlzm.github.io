@@ -2,7 +2,7 @@
 title: LZM Blog
 SEOTitle: 麻瓜不懂Magic的博客 | LZM Blog
 header-img: img/IMG_3349.JPG
-email:1198492751@qq.com
+#email:1198492751@qq.com
 description: "Every failure is leading towards success."
 keyword: "Muggle,Robot,Scrapy,Python,麻瓜不懂Magic的博客, STM32, 机器视觉，机器人"
 url: "http://lzmlzm.github.io"          # your host, for absolute URL
