@@ -1,10 +1,10 @@
 # Site settings
-title: LZM Blog
+title: Muggle Blog
 SEOTitle: 麻瓜不懂Magic的博客 | LZM Blog
 header-img: img/IMG_3349.JPG
 #email:1198492751@qq.com
 description: "Every failure is leading towards success."
-keyword: "Muggle,Robot,Python,嵌入式,Linux,麻瓜不懂Magic的博客,机器人"
+keyword: "Muggle,Robot,Python,嵌入式,Linux,麻瓜不懂Magic的博客"
 url: "http://lzmlzm.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/lzmlzm/lzmlzm.github.io.git" # you code repository
@@ -94,14 +94,5 @@ friends: [
     {
         title: "Baidu",
         href: "http://www.baidu.com"
-    },{
-        title: "简书",
-        href: "http://www.jianshu.com"
-    },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "青莲云Developer",
-        href: "https://www.qinglianyun.com"
     }
 ]
