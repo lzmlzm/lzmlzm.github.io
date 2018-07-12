@@ -2,7 +2,7 @@
 layout:     post
 title:      LINUX下的LCD驱动层次分析
 subtitle:   LINUX-LCD
-date:       2018-7-12
+date:       2018-7-14
 author:     Muggle
 header-img:
 catalog: 	 true
