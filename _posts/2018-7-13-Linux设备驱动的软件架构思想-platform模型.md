@@ -395,4 +395,8 @@ b -- 另外一种机制就是动态申请**platform_device_alloc()**一个platfo
 
 2、驱动注册的时候platform_driver_register()->driver_register()->bus_add_driver()->driver_attach()->bus_for_each_dev()，
 
-对每个挂在虚拟的platform bus的设备作__driver_attach()->driver_probe_device()->drv->bus->match()==platform_match()->比较strncmp(pdev->name, drv->name, BUS_ID_SIZE)，如果相符就调用platform_drv_probe()->driver->probe()，如果probe成功则绑定该设备到该驱动。
+s对每个挂在虚拟的platform bus的设备作__driver_attach()->driver_probe_device()->drv->bus->match()==platform_match()->比较strncmp(pdev->name, drv->name, BUS_ID_SIZE)，如果相符就调用platform_drv_probe()->driver->probe()，如果probe成功则绑定该设备到该驱动。
+# 设备驱动引入platform的好处
+**1.使得所有设备被挂接在总线上**
+**2.隔离BSP和驱动，使得驱动具有更好的可扩展性和跨平台性**
+**3.让一个驱动支持多个设备实例。**
