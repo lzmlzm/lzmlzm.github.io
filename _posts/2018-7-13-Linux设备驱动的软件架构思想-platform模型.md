@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Linux
-subtitle:   Linux设备驱动的软件架构思想-platform模型
+title:      Linux设备驱动的软件架构思想-platform模型
+subtitle:   Linux驱动
 date:       2018-7-16
 author:     Muggle
 header-img:
