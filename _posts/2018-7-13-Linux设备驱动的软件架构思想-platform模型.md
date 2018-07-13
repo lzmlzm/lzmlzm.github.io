@@ -185,7 +185,7 @@ b -- 另外一种机制就是动态申请**platform_device_alloc()**一个platfo
 
 无论哪一种platform_device，最终都将通过platform_device_add这册到platform总线上。区别在于第二步：其实platform_device_add()包括device_add()，不过要先注册resources，然后将设备挂接到特定的platform总线。<br>
 
-###1、 第一种平台设备注册方式
+## 1、 第一种平台设备注册方式
 
  platform_device是静态的全局设备，即platform_device结构的成员已经初始化完成。直接将平台设备注册到platform总线上。platform_device_register和device_register的区别:
 
@@ -258,7 +258,7 @@ b -- 另外一种机制就是动态申请**platform_device_alloc()**一个platfo
     }
 
 
-### 2、第二种平台设备注册方式
+## 2、第二种平台设备注册方式
 先分配一个platform_device结构，对其进行资源等的初始化；之后再对其进行注册，再调用platform_device_register()函数<br>
 
     struct platform_device * platform_device_alloc(const char *name, int id)
@@ -383,6 +383,10 @@ b -- 另外一种机制就是动态申请**platform_device_alloc()**一个platfo
      
     }
 
+#五 设备驱动引入platform的好处
+**1.使得所有设备被挂接在总线上**
+**2.隔离BSP和驱动，使得驱动具有更好的可扩展性和跨平台性**
+**3.让一个驱动支持多个设备实例。**
 
 **总结**：
 
@@ -396,7 +400,4 @@ b -- 另外一种机制就是动态申请**platform_device_alloc()**一个platfo
 2、驱动注册的时候platform_driver_register()->driver_register()->bus_add_driver()->driver_attach()->bus_for_each_dev()，
 
 s对每个挂在虚拟的platform bus的设备作__driver_attach()->driver_probe_device()->drv->bus->match()==platform_match()->比较strncmp(pdev->name, drv->name, BUS_ID_SIZE)，如果相符就调用platform_drv_probe()->driver->probe()，如果probe成功则绑定该设备到该驱动。
-# 设备驱动引入platform的好处
-**1.使得所有设备被挂接在总线上**
-**2.隔离BSP和驱动，使得驱动具有更好的可扩展性和跨平台性**
-**3.让一个驱动支持多个设备实例。**
+*
