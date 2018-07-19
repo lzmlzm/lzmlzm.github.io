@@ -17,11 +17,13 @@ tags:
 1.制作`uboot.bin`文件，输入`make smdk2440_config`生成`.config`文件，再执行`make`然后等编译完目录下就有了`uboot.bin`。使用openjtag将其下载到板上
 2.制作uImage文件，`make mini2440_defconfig`,`make menuconfig`裁剪掉冗余的功能，`make uImage`生成内核映像。然后使用TFTP方式下载，构建TFTP不再说<br>
 TFTP下载内核：
-	tftp 0x30007FC0 uImage
-	nand erase.part kernel
-	nand write 0x30007FC0 kernel
+
+		tftp 0x30007FC0 uImage
+		nand erase.part kernel
+		nand write 0x30007FC0 kernel
 
 TFTP下载文件系统jffs2/yaffs2:
+
 	tftp 32000000 fs_mini_mdev.yaffs2/jffs2
 	nand erase.part rootfs
 	nand write.yaffs 32000000 0x00460000 889bc0
