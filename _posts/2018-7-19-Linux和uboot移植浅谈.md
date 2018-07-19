@@ -20,6 +20,7 @@ TFTP下载内核：
 	tftp 0x30007FC0 uImage
 	nand erase.part kernel
 	nand write 0x30007FC0 kernel
+
 TFTP下载文件系统jffs2/yaffs2:
 	tftp 32000000 fs_mini_mdev.yaffs2/jffs2
 	nand erase.part rootfs
