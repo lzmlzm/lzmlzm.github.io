@@ -7,9 +7,7 @@ author:     Muggle
 header-img:
 catalog: 	 true
 tags:
-    - LINUX之Linux移植
-    - LINUX之uboot移植
-    - LINUX之构建根文件系统
+    - Linux移植
 ---
 
 今天一天移植了LINUX3.4.2和uboot2012.4对LINUX系统移植这方面进行了简单的体验，使用的根文件系统busybox1.7.0也比较老，所以后面将在JZ2440上面移植最新的LINUX系统和UBOOT。下面简单说说今天一天的收获。<br>
