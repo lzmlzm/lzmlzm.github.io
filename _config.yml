@@ -92,7 +92,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Baidu",
-        href: "http://www.baidu.com"
+        title: "CSDN",
+        href: "https://blog.csdn.net/qq_38131812"
     }
 ]
